@@ -126,6 +126,7 @@ const tsCompile = () =>{ // #4. typescript파일 컴파일
 const js = async () => {
   await gulp
     .src(routes.js.src)
+    //bro함수에서  transform의 1. babelify는 ES6+를 지원, 2. uglifyify는 공백제거와 변수명을 짧게 만들어 파일 크기를 줄여준다. 
     .pipe(
       bro({
         transform: [

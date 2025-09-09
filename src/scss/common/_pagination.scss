@@ -1,4 +1,5 @@
 @use '../utiles/var';
+@use '../utiles/var_colors';
 
 .pagination{$font-size:16px; font-size:$font-size; box-sizing:border-box; margin:0 auto; margin-top: em(30px); text-align: center; width:100%; max-width:em(1400px, $font-size);
   .page_item{
@@ -21,7 +22,7 @@
       background-color:transparent;
       box-shadow:none;
     }
-    &.active{background-color:$primary_bg; color:#fff;}
+    &.active{background-color:var_colors.$primary_bg; color:#fff;}
     &.l2{background-color: transparent; background-image:url(var.$imgurl_ico+'ico_page_arr_lft_1_off.png'); 
       &:hover{background-image:url(var.$imgurl_ico+'ico_page_arr_lft_1_on.png');}
     }

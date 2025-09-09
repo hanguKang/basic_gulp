@@ -1,0 +1,14 @@
+// src/partials/_dropdown-mixin.pug
+
+//- 드롭다운의 기본 구조를 정의하는 믹스인
+//- id: 드롭다운을 제어할 고유 ID
+//- toggleText: 토글 버튼에 표시될 텍스트
+mixin createDropdown(id, toggleText)
+  div(class="dropdown-wrap")
+    button(class="dropdown-toggle" type="button" data-dropdown-toggle=id)
+      span.text= toggleText
+      span.icon_set.icon_arrow
+    
+    //- 드롭다운 콘텐츠
+    .dropdown-menu(id=id)
+      block

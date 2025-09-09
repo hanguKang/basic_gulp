@@ -1,0 +1,42 @@
+// src/scss/components/_dropdown.scss
+
+.dropdown-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  //... 버튼 기본 스타일
+}
+
+.arrow-icon {
+  // 화살표 이미지의 크기 및 위치 설정
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url('경로/화살표_아래.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease; // 부드러운 회전 효과
+}
+
+.dropdown-menu {
+  display: none; // 기본적으로 숨김
+  position: absolute;
+  top: 100%;
+  left: 0;
+  //... 드롭다운 메뉴 스타일
+}
+
+// 'is-open' 클래스가 추가되면
+.dropdown-wrap.is-open {
+  .arrow-icon {
+    transform: rotate(180deg); // 화살표를 180도 회전
+  }
+  .dropdown-menu {
+    display: block; // 메뉴 보이기
+  }
+}

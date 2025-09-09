@@ -6,7 +6,7 @@
 .web{display: block;}
   .mobile{display: none;}
 
-@include mixin.maxWidth($m720){
+@include mixin.maxWidth(var.$m720){
   .web{display: none;}
   .mobile{display: block;}
 }

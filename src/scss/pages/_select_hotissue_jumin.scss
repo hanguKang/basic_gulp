@@ -12,7 +12,7 @@
       .board_view_top_up{display: flex; justify-content: space-between; margin-top:em(20px);
         .ico_box{display: flex; justify-content: end; align-items: center;
           .siren{margin-right:16px;
-            .ico{$font-size:16px; font-size:16px; vertical-align:middle; text-align:center; display:inline-block; padding-left:em(22px, $font-size); width:em(114px, $font-size); height:em(36px, $font-size); border:2px solid var_colors.$bdcolor;  background:url($imgurl_ico + 'ico_report_sm.png') no-repeat 12px 50%/auto; 
+            .ico{$font-size:16px; font-size:16px; vertical-align:middle; text-align:center; display:inline-block; padding-left:em(22px, $font-size); width:em(114px, $font-size); height:em(36px, $font-size); border:2px solid var_colors.$bdcolor;  background:url(var.$imgurl_ico + 'ico_report_sm.png') no-repeat 12px 50%/auto; 
 
               span{vertical-align: -5px;}
               &:before{content:''; vertical-align: middle; height:100%;}

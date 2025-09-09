@@ -1,0 +1,16 @@
+// src/partials/_modal.pug
+
+//- 모달의 공통 구조를 생성하는 믹스인
+//- id: JS로 모달을 제어할 때 사용될 고유 ID
+//- title: 모달 상단에 표시될 제목
+//- additionalClass: 추가적인 CSS 클래스 (예: modal-lg, modal-sm 등)
+mixin createModal(id, title, additionalClass)
+  div(id=id, class="modal-wrap " + (additionalClass || ''))
+    .modal-container
+      .modal-header
+        h2.modal-title= title
+        button.modal-close(type="button") X
+      .modal-content
+        // 여기에 모달의 고유한 내용이 삽입
+        block 
+        

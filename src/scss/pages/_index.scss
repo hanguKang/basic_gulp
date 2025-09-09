@@ -251,7 +251,7 @@
                   }
                     
                 }
-                button.share__btn{position:absolute; right:0; bottom: em(calc($font-size *1.5) + calc($font-size*1.7)); width:em(48px); height:em(48px); background:url($imgurl_ico+'ico_share_btn_on.png') no-repeat 0 0/auto; 
+                button.share__btn{position:absolute; right:0; bottom: em(calc($font-size *1.5) + calc($font-size*1.7)); width:em(48px); height:em(48px); background:url(var.$imgurl_ico+'ico_share_btn_on.png') no-repeat 0 0/auto; 
                   &.left{right:auto; left:em(260px);}
                 }
                 button.share_layer_close{position:absolute; top:0; right: 0; width:em(22px); height:em(22px); background:url(var.$imgurl_ico+'ico_btn_close.png') no-repeat 0 0/contain; }

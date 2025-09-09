@@ -13,12 +13,12 @@ span#{$btn}{ $font-size:14px; font-size:em($font-size); line-height:1.5; padding
 	text-indent:0;
 	display:inline-block;
 	height: em(var.$btnHeight);
-	padding: calc(( $btnHeight - $defaultfontsize ) / 4) 12px;
-	font-size:$defaultfontsize;
+	padding: calc(( var.$btnHeight - var.$defaultfontsize ) / 4) 12px;
+	font-size:var.$defaultfontsize;
 	line-height: 1.5;
 	text-align:center;
 	color:#fff;
-	background-color:$btnbgcolor;
+	background-color:var_colors.$btnbgcolor;
 	border:none;
 	border-radius:0;
 	vertical-align:middle;
@@ -69,9 +69,9 @@ span#{$btn}{ $font-size:14px; font-size:em($font-size); line-height:1.5; padding
 
 #{$btn}.b-moreview{
 	min-width:100px;min-height:inherit;
-	border:1px solid $sitecolor;
+	border:1px solid var_colors.$sitecolor;
 	background-color:transparent;
-	color:$sitecolor;
+	color:var_colors.$sitecolor;
 	padding:6px 0;
 	h2 &{margin-top:-4px;}
 }
@@ -87,9 +87,9 @@ span#{$btn}{ $font-size:14px; font-size:em($font-size); line-height:1.5; padding
 #{$btn}.b-chkall{
 	min-width:100px;
 	// min-height:inherit;
-	border:1px solid $sitecolor;
+	border:1px solid var_colors.$sitecolor;
 	background-color:transparent;
-	color:$sitecolor;
+	color:var_colors.$sitecolor;
 	// padding:6px 0;
 	&:before {
 		content: '\f046  ';
@@ -112,8 +112,8 @@ span#{$btn}{ $font-size:14px; font-size:em($font-size); line-height:1.5; padding
 	min-height:inherit;
 }
 #{$btn}.b-line{
-	color:$color_blue;
-	border:1px solid $color_blue;
+	color:var_colors.$color_blue;
+	border:1px solid var_colors.$color_blue;
 	background-color:transparent;text-indent:0;
 }
 #{$btn}.b-reset{
@@ -171,7 +171,7 @@ span#{$btn}{ $font-size:14px; font-size:em($font-size); line-height:1.5; padding
 	}
 }
 #{$btn}.b-down{
-		background-color:$btnbgcolor;
+		background-color:var_colors.$btnbgcolor;
 		padding-left:10px;
 		padding-right:10px;
 		min-width: 100px;
@@ -206,7 +206,7 @@ span#{$btn}{ $font-size:14px; font-size:em($font-size); line-height:1.5; padding
 		background-color:#fff;
 		padding-left:10px;
 		padding-right:10px;
-		border:1px solid $bdcolor;
+		border:1px solid var_colors.$bdcolor;
 		color:#000;
 	// @include breakpoint($md){
 	// 	padding-left:29px;
@@ -279,23 +279,23 @@ i#{$btn}.b-sitego2{padding:0;min-height:inherit;}
 		line-height:15px;
 	}
 }
-#{$btn}.b-total{background-color:$btnbgcolor;}
-#{$btn}.b-chkAll{background-color:$btnbgcolor;}
-#{$btn}.b-reg{background-color:#fff;color:#000;border:1px solid $bdcolor;}
+#{$btn}.b-total{background-color:var_colors.$btnbgcolor;}
+#{$btn}.b-chkAll{background-color:var_colors.$btnbgcolor;}
+#{$btn}.b-reg{background-color:#fff;color:#000;border:1px solid var_colors.$bdcolor;}
 #{$btn}.b-del{background-color:#7f7f7f}
 #{$btn}.b-gray{
 	background-color:#5e5f67;
 	&.on{
-		background-color:$sitecolor;
+		background-color:var_colors.$sitecolor;
 	}
 }
 #{$btn}.b-gray2{background-color:#787e96;}
-#{$btn}.b-cancel{background-color:#fff;color:$color_default;border:1px solid $bdcolor;}
+#{$btn}.b-cancel{background-color:#fff;color:var_colors.$color_default;border:1px solid var_colors.$bdcolor;}
 #{$btn}.b-view{font-size:0.9em;padding-left:8px;padding-right:8px;text-indent:0; min-width: 60px}
 
 #{$btn}.b-submit{
 	// 글쓰기
-	background-color:$sitecolor;
+	background-color:var_colors.$sitecolor;
 }
 
 #{$btn}.b-list{
@@ -313,7 +313,7 @@ i#{$btn}.b-sitego2{padding:0;min-height:inherit;}
 #{$btn}.b-join{
 	@extend .b-lg;
 	background-color:#fff;
-	color:$btnbgcolor;
+	color:var_colors.$btnbgcolor;
 	//background: url(/static/ucms/img/ico-arrRight.png) 152px center no-repeat;
 	width:180px;
 	border:1px solid #000;
@@ -353,7 +353,7 @@ i#{$btn}.b-sitego2{padding:0;min-height:inherit;}
 	//background:#e7ebec url(/static/ucms/img/ico-doc.png) 20px center no-repeat;
 	line-height:1;
 	padding:12px 50px 12px 45px;
-	color:$btnbgcolor;
+	color:var_colors.$btnbgcolor;
 	font-size:16px;
 	// font-weight:300;
 	display:inline-block;

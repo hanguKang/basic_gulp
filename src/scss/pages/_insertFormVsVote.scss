@@ -1,6 +1,8 @@
 @use '../utiles/var_colors';
 @use '../utiles/var';
 @use '../config/mixin';
+@use 'sass:color';
+
 .s_outer{
   #aform{
     .center_box{
